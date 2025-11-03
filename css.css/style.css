@@ -1,0 +1,166 @@
+/* cores: paleta de cinza e vermelho */
+:root {
+    --primary-red: #CA1E3A;
+    --dark-red: #8B1528;
+    --light-red: #E74C3C;
+    --primary-gray: #2C3E50;
+    --secondary-gray: #34495E;
+    --light-gray: #ECF0F1;
+    --border-gray: #BDC3C7;
+    --text-dark: #2C3E50;
+    --text-light: #FFFFFF;
+}
+
+/* Reset e Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+}
+
+/* HEADER COM VARIEDADES GRADIENTE VERMELHO E CINZA */
+.header-custom {
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+    color: white;
+}
+
+/* Sidebar com tons da fatec */
+.sidebar-custom {
+    background-color: var(--light-gray);
+    border-right: 3px solid var(--primary-red);
+}
+
+.sidebar-custom .nav-link {
+    color: var(--text-dark);
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.sidebar-custom .nav-link:hover {
+    background-color: rgba(196, 30, 58, 0.1);
+    border-left-color: var(--primary-red);
+    color: var(--primary-red);
+    font-weight: 600;
+}
+
+/* AREA LOGO */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px 0;
+    border-bottom: 2px solid var(--primary-red);
+}
+.logo-container img {
+    height: 45px;
+    object-fit: contain;
+}
+
+/* Cores personalizadas para os botões */
+.btn-primary-custom {
+    background-color: var(--primary-red);
+    border-color: var(--primary-red);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-custom {
+    border: 2px solid var(--primary-red);
+    color: var(--primary-red);
+    transition: all 0.3s ease;
+}
+.btn-outline-custom:hover {
+    background-color: var(--primary-red);
+    color: white;
+    border-color: var(--primary-red);
+}
+
+/* BORDAS VERMELHAS */
+.card-custom {
+    border-top: 4px solid var(--primary-red);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.card-header-custom {
+    background-color: var(--light-gray);
+    border-bottom: 2px solid var(--primary-red);
+}
+
+/* estilo de tabelas cinza e vermelho */
+.table-custom thead {
+    background-color: var(--primary-red);
+    color: white;
+}
+.table-custom tbody tr:hover {
+    background-color: rgba(196, 30, 58, 0.05);
+}
+
+/* emblema e destaques */
+.badge-custom {
+    background-color: var(--primary-red);
+}
+
+/* botões flutuantes cor vermelha */
+.float-btn-custom {
+    background-color: var(--primary-red);
+    transition: all 0.3s ease;
+}
+.float-btn-custom:hover {
+    background-color: var(--dark-red);
+    transform: scale(1.1);
+}
+.float-btn-custom:focus {
+    border-color: var(--primary-red);
+    box-shadow: 0 0 0 0.2rem rgba(196, 30, 58, 0.25);
+}
+
+/* Formulários */
+.form-select:focus {
+    border-color: var(--primary-red);
+    box-shadow: 0 0 0 0.2rem rgba(196, 30, 58, 0.25);
+}
+
+/* alertas */
+.alert-custom-success {
+    background-color: #d4edda;
+    border-color: var(--primary-red);
+    color: #155724;
+}
+
+/* ajuste de responsividade */
+@media (max-width: 768px) {
+    .sidebar-custom {
+        border-right: none;
+        border-bottom: 3px solid transparent;
+        text-align: center;
+    }
+    .sidebar-custom .nav-link {
+        border-left: none;
+        border-bottom: 3px solid transparent;
+        text-align: center;
+    }
+    .sidebar-custom .nav-link:hover,
+    .sidebar-custom .nav-link.active {
+        border-left: none;
+        border-bottom-color: var(--primary-red);
+    }
+    .logo-container img {
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .logo-container img {
+        height: 30px;
+    }
+}
