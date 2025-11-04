@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -33,7 +35,7 @@
         </div>
 
     </div>
-    
+    <!-- container principal -->
     <div class="d-flex" style="min-height: calc(100vh - 70px);"> 
         
         <nav class="sidebar-custom p-3" style="width: 280px; overflow-y: auto;">
@@ -51,7 +53,7 @@
 
         <div class="flex-grow-1 p-4" style="overflow-y: auto;"> 
             
-            <h1 class="h2 fw-bold mb-4 text-dark">DASHBOARD & USUÁRIO</h1>
+            <h1 class="h2 fw-bold mb-4 text-dark">HOME</h1>
             
             <div class="d-flex gap-3 mb-4 flex-wrap">
                 <button class="btn btn-primary-custom">
